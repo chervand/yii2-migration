@@ -19,6 +19,16 @@ class Migration extends \yii\db\Migration
         parent::createTable($table, $columns, $this->tableOptions);
     }
 
+    public function insert($table, $columns)
+    {
+        $columns = array_merge([
+            'created_at' => time(),
+            'updated_at' => time(),
+        ], $columns);
+
+        parent::insert($table, $columns);
+    }
+
     protected function getMetaColumns()
     {
         return [
