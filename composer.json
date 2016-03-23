@@ -1,0 +1,14 @@
+{
+  "name": "chervand/yii2-migration",
+  "description": "Yii2 Migration Tools",
+  "keywords": ["yii2", "migration", "migrate", "database"],
+  "homepage": "https://github.com/chervand/yii2-migration",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {"chervand\\migration\\": ""}
+  }
+}
